@@ -1,0 +1,10 @@
+C:\Users\213603\source\repos\Matti ja Arto\Matti ja Arto\bin\Debug\Matti ja Arto.exe.config
+C:\Users\213603\source\repos\Matti ja Arto\Matti ja Arto\bin\Debug\Matti ja Arto.exe
+C:\Users\213603\source\repos\Matti ja Arto\Matti ja Arto\bin\Debug\Matti ja Arto.pdb
+C:\Users\213603\source\repos\Matti ja Arto\Matti ja Arto\obj\Debug\Matti ja Arto.csproj.AssemblyReference.cache
+C:\Users\213603\source\repos\Matti ja Arto\Matti ja Arto\obj\Debug\Matti_ja_Arto.Form1.resources
+C:\Users\213603\source\repos\Matti ja Arto\Matti ja Arto\obj\Debug\Matti_ja_Arto.Properties.Resources.resources
+C:\Users\213603\source\repos\Matti ja Arto\Matti ja Arto\obj\Debug\Matti ja Arto.csproj.GenerateResource.cache
+C:\Users\213603\source\repos\Matti ja Arto\Matti ja Arto\obj\Debug\Matti ja Arto.csproj.CoreCompileInputs.cache
+C:\Users\213603\source\repos\Matti ja Arto\Matti ja Arto\obj\Debug\Matti ja Arto.exe
+C:\Users\213603\source\repos\Matti ja Arto\Matti ja Arto\obj\Debug\Matti ja Arto.pdb

@@ -1,0 +1,10 @@
+C:\Users\213603\source\repos\Palkanlasku\Palkanlasku\bin\Debug\Palkanlasku.exe.config
+C:\Users\213603\source\repos\Palkanlasku\Palkanlasku\bin\Debug\Palkanlasku.exe
+C:\Users\213603\source\repos\Palkanlasku\Palkanlasku\bin\Debug\Palkanlasku.pdb
+C:\Users\213603\source\repos\Palkanlasku\Palkanlasku\obj\Debug\Palkanlasku.csproj.AssemblyReference.cache
+C:\Users\213603\source\repos\Palkanlasku\Palkanlasku\obj\Debug\Palkanlasku.Form1.resources
+C:\Users\213603\source\repos\Palkanlasku\Palkanlasku\obj\Debug\Palkanlasku.Properties.Resources.resources
+C:\Users\213603\source\repos\Palkanlasku\Palkanlasku\obj\Debug\Palkanlasku.csproj.GenerateResource.cache
+C:\Users\213603\source\repos\Palkanlasku\Palkanlasku\obj\Debug\Palkanlasku.csproj.CoreCompileInputs.cache
+C:\Users\213603\source\repos\Palkanlasku\Palkanlasku\obj\Debug\Palkanlasku.exe
+C:\Users\213603\source\repos\Palkanlasku\Palkanlasku\obj\Debug\Palkanlasku.pdb
