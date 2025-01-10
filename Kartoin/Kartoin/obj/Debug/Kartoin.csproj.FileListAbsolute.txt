@@ -1,0 +1,10 @@
+C:\Users\213603\source\repos\Kartoin\Kartoin\bin\Debug\Kartoin.exe.config
+C:\Users\213603\source\repos\Kartoin\Kartoin\bin\Debug\Kartoin.exe
+C:\Users\213603\source\repos\Kartoin\Kartoin\bin\Debug\Kartoin.pdb
+C:\Users\213603\source\repos\Kartoin\Kartoin\obj\Debug\Kartoin.csproj.AssemblyReference.cache
+C:\Users\213603\source\repos\Kartoin\Kartoin\obj\Debug\Kartoin.Form1.resources
+C:\Users\213603\source\repos\Kartoin\Kartoin\obj\Debug\Kartoin.Properties.Resources.resources
+C:\Users\213603\source\repos\Kartoin\Kartoin\obj\Debug\Kartoin.csproj.GenerateResource.cache
+C:\Users\213603\source\repos\Kartoin\Kartoin\obj\Debug\Kartoin.csproj.CoreCompileInputs.cache
+C:\Users\213603\source\repos\Kartoin\Kartoin\obj\Debug\Kartoin.exe
+C:\Users\213603\source\repos\Kartoin\Kartoin\obj\Debug\Kartoin.pdb
