@@ -1,0 +1,10 @@
+C:\Users\213603\source\repos\hello nimi\hello nimi\bin\Debug\hello nimi.exe.config
+C:\Users\213603\source\repos\hello nimi\hello nimi\bin\Debug\hello nimi.exe
+C:\Users\213603\source\repos\hello nimi\hello nimi\bin\Debug\hello nimi.pdb
+C:\Users\213603\source\repos\hello nimi\hello nimi\obj\Debug\hello nimi.csproj.AssemblyReference.cache
+C:\Users\213603\source\repos\hello nimi\hello nimi\obj\Debug\hello_nimi.Form1.resources
+C:\Users\213603\source\repos\hello nimi\hello nimi\obj\Debug\hello_nimi.Properties.Resources.resources
+C:\Users\213603\source\repos\hello nimi\hello nimi\obj\Debug\hello nimi.csproj.GenerateResource.cache
+C:\Users\213603\source\repos\hello nimi\hello nimi\obj\Debug\hello nimi.csproj.CoreCompileInputs.cache
+C:\Users\213603\source\repos\hello nimi\hello nimi\obj\Debug\hello nimi.exe
+C:\Users\213603\source\repos\hello nimi\hello nimi\obj\Debug\hello nimi.pdb
