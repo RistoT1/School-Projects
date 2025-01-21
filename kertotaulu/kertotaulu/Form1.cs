@@ -26,13 +26,15 @@ namespace kertotaulu
                 List<int> list = new List<int>();
                 int luku = int.Parse(txtLuku.Text);
               
-                for (i = 0; i <= kierrokset; i++)
+                for (i = 0; i <= kierrokset; i++) // kun toistaa niin kauan kun I on pienempi kuin haluttu kierros määrä
                 {
-                    list.Add(i*luku);
+                    list.Add(i*luku); // user input kerrotaan kierroksen luvulla
                 }
-                MessageBox.Show($"kertotaulu for loopilla {string.Join(", ",list)}");
+                MessageBox.Show($"kertotaulu for loopilla {string.Join(", ",list)}");   
                 i = 0;
-                list.Clear();
+                list.Clear(); // tyhjentää list listan
+
+                // sama toiminto while looppia käyttäen
                 while (i <= kierrokset) 
                 {
                     list.Add(luku*i);
