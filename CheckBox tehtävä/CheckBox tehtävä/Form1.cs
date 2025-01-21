@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CheckBox_tehtävä
+{
+    public partial class Form1 : Form
+    {
+
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnTulosta_Click(object sender, EventArgs e)
+        {
+            string tulos = "";
+
+            foreach (Control control in this.Controls)
+            {
+                if (control is CheckBox checkbox && checkbox.Checked)
+                {
+                    tulos += checkbox.Text + Environment.NewLine;
+                }
+            }
+
+
+            txtVastaus.Text = tulos;
+
+            
+        }
+    }
+}
