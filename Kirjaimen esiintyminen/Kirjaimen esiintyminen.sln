@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kirjaimen esiintyminen", "Kirjaimen esiintyminen\Kirjaimen esiintyminen.csproj", "{AAF00209-B734-4198-B207-7BCACAA3B00E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAF00209-B734-4198-B207-7BCACAA3B00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF00209-B734-4198-B207-7BCACAA3B00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF00209-B734-4198-B207-7BCACAA3B00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF00209-B734-4198-B207-7BCACAA3B00E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E5FAAF6-689D-4E13-AB1A-9FB7AFFADFFB}
+	EndGlobalSection
+EndGlobal
