@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Image Gallery</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div class="gallery-container" id="gallery">
+        <div class="image-container">
+            <div class="image-item">
+                <img src="src/city.jpg" alt="City view" loading="lazy">
+            </div>
+            <div class="image-item">
+                <img src="src/Juhlakuva.jpg" alt="Celebration photo" loading="lazy">
+            </div>
+            <div class="image-item">
+                <img src="src/maasto.jpg" alt="Landscape" loading="lazy">
+            </div>
+            <div class="image-item">
+                <img src="src/Mainkuva1.jpg" alt="Main image 1" loading="lazy">
+            </div>
+            <div class="image-item">
+                <img src="src/Muotokuva.jpg" alt="Portrait" loading="lazy">
+            </div>
+            <div class="image-item">
+                <img src="src/Perhekuva.jpg" alt="Family photo" loading="lazy">
+            </div>
+            <div class="image-item">
+                <img src="src/pukukuva1.jpg" alt="Dress photo" loading="lazy">
+            </div>
+            <div class="image-item">
+                <img src="src/Valokuvat.jpg" alt="Photos" loading="lazy">
+            </div>
+            <div class="image-item">
+                <img src="src/puu.jpg" alt="Tree" loading="lazy">
+            </div>
+            <div class="image-item">
+                <img src="src/puujakivi.jpg" alt="Tree and stone" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Intersection Observer for advanced lazy loading ei lagaa
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.image-item img');
+            
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            const parent = img.parentElement;
+                            
+                            // Remove loading state when image is visible
+                            parent.classList.remove('loading');
+                            
+                            // Stop observing after it's loaded
+                            observer.unobserve(img);
+                        }
+                    });
+                }, {
+                    rootMargin: '200px 0px', // Load images 200px before they appear
+                    threshold: 0.01
+                });
+                
+                images.forEach(img => {
+                    img.parentElement.classList.add('loading');
+                    imageObserver.observe(img);
+                });
+            }
+            
+            // Throttle scroll events
+            const gallery = document.getElementById('gallery');
+            let ticking = false;
+            
+            gallery.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

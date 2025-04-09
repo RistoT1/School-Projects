@@ -1,0 +1,468 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(253, 207, 234);
+    color: white;
+    /* Remove padding from body to avoid gap */
+    padding-top: 0;
+}
+
+.custom-navbar {
+    background-color: rgba(253, 172, 172, 0.8);
+    /* Soft pink with transparency */
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+}
+
+/* Add a higher z-index to ensure navbar stays on top */
+.navbar-fixed-top {
+    z-index: 1030;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.custom-navbar .navbar-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+    margin-left: 60px;
+    padding: 15px 15px;
+    height: auto;
+    cursor: default;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Styled toggle button */
+.navbar-toggle {
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: 15px;
+    border-radius: 50px;
+    padding: 9px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+    float: right;
+}
+
+.navbar-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
+    height: 2px;
+    width: 22px;
+    border-radius: 1px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggle:hover .icon-bar {
+    transform: scaleX(1.1);
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 5px;
+}
+
+/* MODIFIED: Evenly spaced navbar */
+.custom-navbar .navbar-collapse {
+    padding: 0;
+}
+
+.custom-navbar .nav {
+    width: 100%;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .navbar-brand {
+        margin-left: 80px;
+        /* Even more space on larger screens */
+    }
+
+    .custom-navbar .nav {
+        display: flex;
+        justify-content: space-around;
+        float: none;
+        width: 100%;
+    }
+
+    .custom-navbar .nav>li {
+        float: none;
+        display: inline-block;
+        flex: 1;
+        text-align: center;
+    }
+}
+
+.custom-navbar .nav>li>a {
+    color: white;
+    font-size: 18px;
+    padding: 15px 20px;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.custom-navbar .nav>li>a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Light hover effect */
+    border-radius: 5px;
+}
+
+/* Remove active state background */
+.custom-navbar .nav>li.active>a,
+.custom-navbar .nav>li.active>a:focus,
+.custom-navbar .nav>li.active>a:hover {
+    background: none;
+    color: #fff;
+}
+
+/* Styles for small screens */
+@media (max-width: 767px) {
+    .navbar-brand {
+        margin-left: 30px;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin-top: 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        background-color: rgba(253, 172, 172, 0.95);
+        border-radius: 0 0 10px 10px;
+        padding: 0;
+    }
+
+    .navbar-nav {
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar-nav>li {
+        display: block;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-nav>li:last-child {
+        border-bottom: none;
+    }
+
+    .navbar-nav>li>a {
+        padding: 15px 20px;
+        transition: all 0.3s ease;
+        text-align: left;
+    }
+
+    .navbar-nav>li>a:hover {
+        padding-left: 25px;
+    }
+}
+
+/* Ensure the navbar is expanded and fully visible on larger screens */
+@media (min-width: 768px) {
+    .navbar-collapse {
+        display: flex !important;
+        width: 100%;
+        float: none;
+    }
+
+    .custom-navbar .container-fluid {
+        display: flex;
+        align-items: center;
+    }
+
+    .custom-navbar .navbar-header {
+        width: auto;
+        flex: 0 0 auto;
+    }
+}
+
+/* Vertical bubble layout */
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* Add padding-top to match navbar height */
+    padding-top: 50px;
+    margin-top: 0;
+    background: linear-gradient(rgba(233, 16, 16, 0.137), rgba(248, 161, 238, 0.26)), url(src/maasto.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* Circles container for left wall vertical layout */
+.circles-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    height: 90%;
+}
+
+.circle-small {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.circle-small:hover {
+    transform: scale(1.3);
+}
+
+.circle-medium {
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.circle-medium:hover {
+    transform: scale(1.2);
+}
+
+.circle-small img,
+.circle-medium img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Responsive circle sizes */
+@media (min-width: 768px) {
+    .circle-small {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle-medium {
+        width: 180px;
+        height: 180px;
+    }
+
+    .circles-container {
+        left: 80px;
+    }
+}
+
+@media (min-width: 992px) {
+    .circle-small {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle-medium {
+        width: 220px;
+        height: 220px;
+    }
+
+    .circles-container {
+        left: 100px;
+    }
+}
+
+/* Adjust for very small screens */
+@media (max-width: 576px) {
+    .circles-container {
+        left: 50px;
+    }
+
+    .circle-small {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle-medium {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+a:hover {
+    background-color: #ffffff36;
+    text-decoration: none;
+    color: white;
+}
+
+.afterimg-1 {
+    background-color: rgb(247, 162, 162);
+    padding: 30px 0;
+}
+
+.afterimg-1 h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+footer {
+    background-color: #ffffff;
+}
+
+.container-fluid-2 {
+    width: 100%;
+    padding: 0 15px;
+    background-color: #ffdcf0ce;
+}
+
+.row-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Square box adjustments */
+.square-box {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 22%;
+    /* Changed from fixed width to percentage */
+    height: 650px;
+    /* Slightly reduced height */
+    margin: 20px 1.5%;
+    /* Horizontal margins for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Added box-shadow to transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.square-box h1 {
+    margin: 15px 0;
+    padding: 0;
+    color: rgb(226, 142, 252);
+    z-index: 1;
+}
+
+.imger {
+    width: 100%;
+    height: calc(95% - 70px);
+    /* Account for the h1 height */
+    overflow: hidden;
+}
+
+.imger img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+    /* Round only bottom corners */
+}
+
+.square-box:hover {
+    transform: scale(1.05);
+    /* More noticeable scale effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Larger shadow on hover */
+    z-index: 2;
+    /* Ensure hovered items appear above others */
+}
+
+/* Comprehensive mobile adjustments */
+@media (min-width: 1200px) {
+
+    /* For very large screens, ensure all 4 boxes fit in one row */
+    .square-box {
+        width: 22%;
+        height: 650px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* For large screens */
+    .square-box {
+        width: 22%;
+        height: 550px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* For medium screens, show 2 boxes per row */
+    .square-box {
+        width: 45%;
+        height: 550px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* For small screens, stack them vertically */
+    .row-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .square-box {
+        width: 90%;
+        height: auto;
+        min-height: 500px;
+        margin: 15px auto;
+    }
+}
+
+.portfolio form input {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.719);
+    font-family: sans-serif;
+    font-weight: bold;
+}
