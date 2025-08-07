@@ -1,0 +1,10 @@
+C:\Users\213603\source\repos\Keskiarvo\Keskiarvo\bin\Debug\Keskiarvo.exe.config
+C:\Users\213603\source\repos\Keskiarvo\Keskiarvo\bin\Debug\Keskiarvo.exe
+C:\Users\213603\source\repos\Keskiarvo\Keskiarvo\bin\Debug\Keskiarvo.pdb
+C:\Users\213603\source\repos\Keskiarvo\Keskiarvo\obj\Debug\Keskiarvo.csproj.AssemblyReference.cache
+C:\Users\213603\source\repos\Keskiarvo\Keskiarvo\obj\Debug\Keskiarvo.Form1.resources
+C:\Users\213603\source\repos\Keskiarvo\Keskiarvo\obj\Debug\Keskiarvo.Properties.Resources.resources
+C:\Users\213603\source\repos\Keskiarvo\Keskiarvo\obj\Debug\Keskiarvo.csproj.GenerateResource.cache
+C:\Users\213603\source\repos\Keskiarvo\Keskiarvo\obj\Debug\Keskiarvo.csproj.CoreCompileInputs.cache
+C:\Users\213603\source\repos\Keskiarvo\Keskiarvo\obj\Debug\Keskiarvo.exe
+C:\Users\213603\source\repos\Keskiarvo\Keskiarvo\obj\Debug\Keskiarvo.pdb

@@ -1,0 +1,10 @@
+C:\Users\213603\source\repos\Kolmion Pinta-ala\Kolmion Pinta-ala\bin\Debug\Kolmion Pinta-ala.exe.config
+C:\Users\213603\source\repos\Kolmion Pinta-ala\Kolmion Pinta-ala\bin\Debug\Kolmion Pinta-ala.exe
+C:\Users\213603\source\repos\Kolmion Pinta-ala\Kolmion Pinta-ala\bin\Debug\Kolmion Pinta-ala.pdb
+C:\Users\213603\source\repos\Kolmion Pinta-ala\Kolmion Pinta-ala\obj\Debug\Kolmion Pinta-ala.csproj.AssemblyReference.cache
+C:\Users\213603\source\repos\Kolmion Pinta-ala\Kolmion Pinta-ala\obj\Debug\Kolmion_Pinta_ala.Form1.resources
+C:\Users\213603\source\repos\Kolmion Pinta-ala\Kolmion Pinta-ala\obj\Debug\Kolmion_Pinta_ala.Properties.Resources.resources
+C:\Users\213603\source\repos\Kolmion Pinta-ala\Kolmion Pinta-ala\obj\Debug\Kolmion Pinta-ala.csproj.GenerateResource.cache
+C:\Users\213603\source\repos\Kolmion Pinta-ala\Kolmion Pinta-ala\obj\Debug\Kolmion Pinta-ala.csproj.CoreCompileInputs.cache
+C:\Users\213603\source\repos\Kolmion Pinta-ala\Kolmion Pinta-ala\obj\Debug\Kolmion Pinta-ala.exe
+C:\Users\213603\source\repos\Kolmion Pinta-ala\Kolmion Pinta-ala\obj\Debug\Kolmion Pinta-ala.pdb

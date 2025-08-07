@@ -1,0 +1,10 @@
+C:\Users\213603\source\repos\Auto laskuri\Auto laskuri\bin\Debug\Auto laskuri.exe.config
+C:\Users\213603\source\repos\Auto laskuri\Auto laskuri\bin\Debug\Auto laskuri.exe
+C:\Users\213603\source\repos\Auto laskuri\Auto laskuri\bin\Debug\Auto laskuri.pdb
+C:\Users\213603\source\repos\Auto laskuri\Auto laskuri\obj\Debug\Auto laskuri.csproj.AssemblyReference.cache
+C:\Users\213603\source\repos\Auto laskuri\Auto laskuri\obj\Debug\Auto_laskuri.Form1.resources
+C:\Users\213603\source\repos\Auto laskuri\Auto laskuri\obj\Debug\Auto_laskuri.Properties.Resources.resources
+C:\Users\213603\source\repos\Auto laskuri\Auto laskuri\obj\Debug\Auto laskuri.csproj.GenerateResource.cache
+C:\Users\213603\source\repos\Auto laskuri\Auto laskuri\obj\Debug\Auto laskuri.csproj.CoreCompileInputs.cache
+C:\Users\213603\source\repos\Auto laskuri\Auto laskuri\obj\Debug\Auto laskuri.exe
+C:\Users\213603\source\repos\Auto laskuri\Auto laskuri\obj\Debug\Auto laskuri.pdb
