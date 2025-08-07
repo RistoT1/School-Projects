@@ -1,0 +1,790 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background: rgb(251, 253, 254);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgb(92, 91, 91);
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    padding: 0.3rem 1rem;
+    position: relative;
+    color: #0078a8;
+}
+
+.navbar-brand:hover {
+    color: #0078a8; /* or whatever you want it to stay as */
+    text-decoration: none; /* optional: remove underline if added by Bootstrap */
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-name {
+    color: white;
+    font-size: 20px;
+}
+.navbar-link{
+    padding-inline: 20px;
+}
+.nav-link:hover {
+    opacity: 0.6 !important;
+    transition: 0.2s;
+}
+.navbar-nav a {
+    color: #000000;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.frontpage-img-container{
+    background-image: 
+        linear-gradient(
+            rgba(48, 60, 78, 0.5),   
+            rgba(76, 85, 58, 0.5)    
+        ),
+        url('src/etusivuimg.jpg'); 
+
+    background-size: cover; 
+    background-position: center;  
+    height: 700px;  
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;  
+    text-align: center;
+}
+
+.frontpage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(240, 240, 252);
+    text-align: center;
+    border-bottom: solid 1px rgb(220, 245, 252);
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%);
+    position: relative;
+    box-sizing: border-box;
+    padding: 2rem 0;
+    /* Add this line to remove any top margin */
+    margin-top: 0;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-buttons {
+    margin-bottom: 3rem;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.primary-btn {
+    background-color: #0078a8;
+    color: white;
+    border: 2px solid #0078a8;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.primary-btn:hover {
+    background-color: #005d82;
+    border-color: #005d82;
+}
+
+.secondary-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero-benefits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.benefit-item i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.title, .infocard-title{
+    text-align: center;
+}
+.title{
+    margin: 20px;
+}
+.infocard-title{
+    margin: 10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+.infocard{
+    max-width: 100%;
+    height: auto;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin: 20px auto;
+}
+.infocard-img {
+    height: 300px;
+    background-color: #f8fcfa;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Prevents image overflow */
+}
+
+.infocard-img img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    object-fit: contain; /* Maintains aspect ratio while fitting in container */
+    width: auto;
+    height: auto;
+}
+
+.info-container {
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.infocard-text{
+    height: 140px;
+    text-align: center;
+    padding: 20px;
+}
+.infocard-link{
+    display: inline-block;
+    margin-top: 20px;
+    color: #0078a8;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+        
+    display: flex;
+    justify-content: center;
+}
+.infocard-link a{
+    padding-bottom: 15px;
+}
+.question-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question-container{
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.question-col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.question{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+
+    border: solid 1px transparent; /* Add this line */
+    border-radius: 15px; /* Optional: add this too if you want consistent shape */
+    transition: border-color 0.3s ease; /* Optional: smoother transition */
+}
+.question:hover{
+    border-color: #0078a8;
+}
+.answer {
+    max-height: 0;
+    font-size: 22px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    text-align: left;
+}
+
+.answer.open {
+    max-height: 200px; 
+}
+
+@media (min-width: 768px) {
+    .col-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .row {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    
+    .calculator-table-container,
+    .bmi-calculator {
+        max-width: 100%;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero-btn {
+        margin: 0;
+    }
+    
+    .hero-benefits {
+        gap: 20px;
+    }
+    .question-container {
+        width: 90%; 
+        padding: 0 10px;
+    }
+    
+    .question {
+        padding: 10px;
+        flex-direction: column; 
+    }
+    
+    .question h3 {
+        font-size: 18px; 
+        margin-right: 10px;
+    }
+    
+    .answer {
+        font-size: 16px; 
+    }
+    
+    .answer.open {
+        max-height: 300px; /
+    }
+}
+@media (max-width: 480px) {
+    .question-container {
+        width: 95%;
+    }
+    
+    .question h3 {
+        font-size: 16px;
+    }
+}
+.footer {
+    background-color: #0f0e0e;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+footer p,
+footer button {
+    font-size: 15px !important;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+    padding: 0 var(--card-padding);
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* treveystieto */
+
+.document-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 40px;
+    margin: 30px 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.document-title {
+    color: #0078a8;
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.document-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    color: #0078a8;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+.calculator-title {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.subsection-title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.document-text {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th,
+.data-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+.info-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0078a8;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.document-list {
+    margin-bottom: 15px;
+}
+
+.document-list li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+
+/* Main container styling */
+.container-calculator {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    margin-bottom: 15px;
+}
+
+/* Calculator container */
+.info-container {
+    width: 100%;
+}
+
+.calculator-container {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Table styling */
+.calculator-table-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.calculator-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-table th,
+.calculator-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.calculator-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* BMI classification color coding */
+.S-ali { background-color: #e0f7fa; }
+.M-ali { background-color: #b2ebf2; }
+.L-ali { background-color: #80deea; }
+.norm { background-color: #a5d6a7; }
+.L-yli { background-color: #ffe082; }
+.M-yli { background-color: #ffcc80; }
+.V-yli { background-color: #ffab91; }
+.S-yli { 
+    background-color: #ef9a9a;
+    color: white;
+}
+
+tr.active {
+    outline: 3px solid black;
+    font-weight: bold;
+}
+
+/* Calculator form styling */
+.bmi-calculator {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+.calculator-title {
+    background: linear-gradient(135deg, #0078a8 0%, #2575fc 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.calculator-title h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.calculator-input {
+    padding: 30px 20px;
+}
+
+.calculator.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input[type="number"]:focus {
+    border-color: rgb(0, 0, 0);
+    outline: none;
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, rgb(159, 211, 242) 0%, rgb(183, 207, 250) 100%);
+    color: white;
+    border: none;
+    padding: 14px 5px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+}
+
+.calculator-result {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* päiväkirja*/
+.paivakirja-container {
+    max-width: 800px;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--light-color);
+    padding-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+.entry-list {
+    margin-top: 30px;
+}
+
+.entry {
+    background-color: var(--light-color);
+    border-left: 4px solid var(--secondary-color);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.entry h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.entry-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.tallenna-btn {
+    border: solid 1px black;
+    color: black;
+}
+
+.delete-btn {
+    background-color: #ef4444;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+}
